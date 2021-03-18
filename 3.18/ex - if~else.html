@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ex6-15.html</title>
+	</head>
+	<body>
+		<script>
+		var score = prompt("점수를 입력하세요(0~100)");
+		//console.log(score);
+		var pScore = parseInt(score);
+		//console.log(pScore);
+			if (pScore >= 90 && pScore <= 100) {
+				document.write("A학점입니다");
+			} else if (pScore >= 80 && pScore <= 90) {
+				document.write("B학점입니다");
+			} else if (pScore >= 70 && pScore <= 80) {
+				document.write("C학점입니다");
+			} else if (pScore >= 60 && pScore <= 70) {
+				document.write("D학점입니다");
+			} else if (pScore >= 0 && pScore <= 60) {
+				document.write("F학점입니다");
+			} else {
+				document.write("점수가 유효하지 않습니다");
+			}
+			
+		</script>
+		
+		<!-- parseInt(Math.random() * 갯수) + 시작값
+		
+		스타크래프트 종족 대입시
+		parseInt(Math.random() * 갯수) + 시작값
+		parseInt(Math.random() * 3) + 1 -->
+		
+	</body>
+</html>

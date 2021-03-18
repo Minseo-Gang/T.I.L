@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>가위바위보</title>
+	</head>
+	<body>
+		<table border = "1">
+			<thead>
+				<tr>
+				<th>User</th>
+				<th>결과</th>
+				<th>Computer</th>
+				</tr>
+			<tbody>
+				<tr>
+					<td><img id="RSP1"></td>
+					<td><img id="winLose"></td>
+					<td><img id="RSP2"></td>
+				</tr>
+
+		<script>
+			var enter = prompt("가위.바위.보!");
+			
+			if (enter == "바위") {
+				var rock = document.getElementById("RSP1");
+				rock.src = "images/rock.png";
+			} else if (enter == "가위") {
+				var scissor = document.getElementById("RSP1");
+				scissor.src = "images/scissor.png";
+			} else if (enter == "보") {
+				var paper = document.getElementById("RSP1");
+				paper.src = "images/paper.png";
+			}
+			
+			var random = parseInt(Math.random() * 3) + 1;
+			if (random == 1) {
+				var rock = document.getElementById("RSP2");
+				rock.src = "images/rock.png";
+			} else if (random == 2) {
+				var scissor = document.getElementById("RSP2");
+				scissor.src = "images/scissor.png";
+			} else if (random == 3) {
+				var paper = document.getElementById("RSP2");
+				paper.src = "images/paper.png";
+			}
+			
+			// 바위 = 1, 가위 = 2, 보 = 3
+			
+			if (enter == "가위" && random == 1 ) {
+				var lose = document.getElementById("winLose");
+				lose.src = "images/lose.png";
+			} else if (enter == "가위" && random == 2) {
+				var draw = document.getElementById("winLose");
+				draw.src = "images/draw.jpg";
+			} else if (enter == "가위" && random == 3) {
+				var win = document.getElementById("winLose");
+				win.src = "images/win.jpg";
+			}
+			
+			if (enter == "바위" && random == 1) {
+				var draw = document.getElementById("winLose");
+				draw.src = "images/draw.jpg";
+			} else if (enter == "바위" && random == 2) {
+				var win = document.getElementById("winLose");
+				win.src = "images/win.jpg";
+			} else if (enter == "바위" && random == 3){
+				var lose = document.getElementById("winLose");
+				lose.src = "images/lose.png";
+			}
+				
+			if (enter == "보" && random == 1) {	
+				var win = document.getElementById("winLose");
+				win.src = "images/win.jpg";
+			} else if (enter == "보" && random == 2) {
+				var lose = document.getElementById("winLose");
+				lose.src = "images/lose.png";
+			} else if (enter == "보" && random == 3) {
+				var draw = document.getElementById("winLose");
+				draw.src = "images/draw.jpg";
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>COFFEE</title>
+	</head>
+	<body>
+	<h2>Menu</h2>
+	<hr>
+		<ul>
+			<li>에스프레소 - 2000원</li>
+			<li>아메리카노 - 3000원</li>
+			<li>카페라떼 - 4000원</li>
+		</ul>
+		투입:<input type="text" id="order">원<br>
+		음료:<input type="text" id="drink">
+		<button type="button" onclick="orderCoffee();">주문하기</button>
+		<table>
+			<tr>
+			<td><img id="coffee"></td>
+			</tr>
+		</table>
+		<p>
+		거스름돈:<input type="text" id="change">원
+		</P>
+		
+		<script>
+		function orderCoffee() {
+			var order = parseInt(document.getElementById("order").value);
+			var someDrink = document.getElementById("drink");
+			var drinkName = someDrink.value;
+			var changes = document.getElementById("change");
+			
+			if (drinkName == "에스프레소") {
+				var caculate = order - 2000;
+					changes.value = calculate;
+			} else if (drinkName == "아메리카노") {
+				var calculate = order - 3000;
+					changes.value = calculate;
+			} else if (drinkName == "카페라떼") {
+				var calculate = order - 4000;
+					changes.value = calculate;
+			} 
+			
+			if (drinkName == "에스프레소" && order - 2000 < 0) {
+				alert("금액이 부족합니다");
+			} else if (drinkName == "아메리카노" && order - 3000 < 0) {
+				alert("금액이 부족합니다");
+			} else if (drinkName == "카페라떼" && order - 4000 < 0) {
+				alert("금액이 부족합니다");
+			}
+			
+			if (drinkName == "에스프레소") {
+				var espresso = document.getElementById("coffee");
+					espresso.src = "images/espresso.png";
+			} else if (drinkName == "아메리카노") {
+				var americano = document.getElementById("coffee");
+					americano.src = "images/americano.png";
+			} else if (drinkName == "카페라떼") {
+				var caffelatte = document.getElementById("coffee");
+					caffelatte.src = "images/caffelatte.png";
+			}				
+		}
+		
+		</script>
+	</body>
+</html>
