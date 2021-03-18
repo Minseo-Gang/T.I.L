@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ex6-6-2.html</title>
+	</head>
+	<body>
+		<input type="text" value="100" id="text1"><br>
+		<input type="text" value="200" id="text2"><br>
+		<button type="button" onclick="add();">클릭</button>
+		<hr>
+		<input type="text" id="text3">
+		<script>
+		//변수명 - 명사, 함수명 - 동사 가 좋음
+		function add() {
+			console.log("클릭"); // 기능 잘 하는지 확인해보고 작업하기
+			var el1 = document.getElementById("text1"); //id로 엘리먼트 얻기
+			var el2 = document.getElementById("text2");
+			
+			var val1 = el1.value;
+			var val2 = el2.value;
+			
+			var num1 = parseInt(val1);
+			var num2 = parseInt(val2);
+			
+			var result = num1 + num2;
+			var el3 = document.getElementById("text3");
+			el3.value = result;
+		
+		}
+		</script>
+	</body>
+</html>

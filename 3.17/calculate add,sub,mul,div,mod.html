@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ex6-6-3.html</title>
+	</head>
+	<body>
+	<input type="text" value="100" id="text1"><br>
+	<input type="text" value="200" id="text2"><br>
+	<button type="button" onclick="add();">+</button>
+	<button type="button" onclick="sub();">-</button>
+	<button type="button" onclick="multi();">*</button>
+	<button type="button" onclick="div();">/</button>
+	<button type="button" onclick="mod();">%</button>
+	<hr>
+	<input type="text" id="text3">
+		<script>
+		function add() { 
+			var el1 = document.getElementById("text1")
+			var el2 = document.getElementById("text2")
+			var val1 = el1.value;
+			var val2 = el2.value;
+			var num1 = parseInt(val1);
+			var num2 = parseInt(val2);
+			var result = num1 + num2;
+			var el3 = document.getElementById("text3")
+			el3.value = result;
+		}
+		
+		function sub() {
+			var el1 = document.getElementById("text1")
+			var el2 = document.getElementById("text2")
+			var val1 = el1.value;
+			var val2 = el2.value;
+			var num1 = parseInt(val1);
+			var num2 = parseInt(val2);
+			var result = num1 - num2;
+			var el3 = document.getElementById("text3")
+			el3.value = result;
+		}
+		
+		function multi() {
+			var el1 = document.getElementById("text1")
+			var el2 = document.getElementById("text2")
+			var val1 = el1.value;
+			var val2 = el2.value;
+			var num1 = parseInt(val1);
+			var num2 = parseInt(val2);
+			var result = num1 * num2;
+			var el3 = document.getElementById("text3")
+			el3.value = result;
+		}
+		
+		function div() {
+			var el1 = document.getElementById("text1")
+			var el2 = document.getElementById("text2")
+			var val1 = el1.value;
+			var val2 = el2.value;
+			var num1 = parseInt(val1);
+			var num2 = parseInt(val2);
+			var result = num1 / num2;
+			var el3 = document.getElementById("text3")
+			el3.value = result;
+		}
+		
+		function mod() { 
+		//텍스트 엘리먼트 찾기
+			var el1 = document.getElementById("text1");
+			var el2 = document.getElementById("text2");
+			var el3 = document.getElementById("text3");
+		//값 찾기
+			var t1 = el1.value;
+			var t2 = el2.value;
+		//저장된 텍스트값을 숫자로 변경
+			var n1 = parseInt(t1);
+			var n2 = parseInt(t2);
+			var result = n1 % n2; //n1 /n2 의 나머지
+			el3.value = result;
+		}
+		</script>
+	</body>
+</html>

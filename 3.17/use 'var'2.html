@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ex6-6.html</title>
+	</head>
+	<body>
+	<button type="button" onclick="func1();">클릭</button>
+		<script>
+		console.log(this);
+		// var 변수명 = 값; - 전역 변수(전국구 의원)
+		var v1 = 100;
+		var v2 = 300;
+		// 지역(블럭 { })
+		
+		function func1() {
+			var v1 = 1; // 지역 변수
+			var v2 = 50;
+			//console.log(v1); //1
+			//console.log(this.v1); //100
+			console.log(v2);
+			console.log(this.v2);
+		}
+		</script>
+	</body>
+</html>

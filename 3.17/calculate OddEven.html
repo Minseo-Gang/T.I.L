@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ex6-12-1.html</title>
+	</head>
+	<body>
+		<input type = "text" id="text1">
+		<button type ="button" onclick="checkOddEven();">확인</button><br>
+		<input type = "text" id="text2">
+			<script>
+			function checkOddEven() { 
+				var el1 = document.getElementById("text1");
+				var val = el1.value;
+				var num1 = parseInt(val);
+				var result = (num1 % 2 == 1)? "홀수": "짝수";
+					//var result = (n % 2 == 1) ? "홀수": "짝수";
+				var el2 = document.getElementById("text2");
+				el2.value = result;
+			}
+			</script>
+	</body>
+</html>
