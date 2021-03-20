@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>반복 중단</title>
+	</head>
+	<body>
+		<script>
+		 for (var v = 1; v <= 10; v++) {
+			// 3의 배수가 아닌 숫자는 통과
+			if (v % 3 != 0) {
+				continue; // 3의 배수는 걸러져서 출력되고 나머지는 계속 작업
+			}
+			document.write(v + "<br>"); // 출력값 3, 6, 9
+		 }
+		</script>
+	</body>
+</html>

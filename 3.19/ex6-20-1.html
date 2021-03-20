@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>반복 중단</title>
+	</head>
+	<body>
+		<script>
+			/*
+			for (var v = 1; v <= 10; v++) {
+				document.write(v + "<br>");
+				if (v == 5) {
+				break; //반복 중단
+				}
+			}
+			*/
+			
+			/*
+			var sum = 0;
+			for (var v = 1; v <= 100000; v++) {
+				sum += v;
+				if(sum > 3000) {
+					document.write(v + "<br>");
+					document.write(sum);
+					break;
+				}
+			}
+			
+			이 경우 for를 쓸 순 있지만 되도록이면 쓰지 말자
+			*/
+			
+			var sum = 0;
+			var v = 1;
+			while (true) {
+				// 반복 탈출 조건(반드시 확인)
+				sum += v;
+				if (sum > 3000) {
+				document.write(v + "<br>");
+				document.write(sum);
+				break;
+				}
+				v++;
+			}
+			// for(초기식;조건문;반복작업) = while(true)
+			
+			// for - 반복 횟수가 정해져 있을때 주로 사용함
+			// while - 반복 횟수를 잘 모르겠을때 사용함
+
+		</script>
+	</body>
+</html>

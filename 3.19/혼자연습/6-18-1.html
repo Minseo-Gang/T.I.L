@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ex6-18-1.html</title>
+	</head>
+	<body>
+		<script> //홀수의 합, 짝수의 합, 합계 구하기 0~100 프롬프트 이용, while 조건문
+			var add = prompt("숫자를 입력해 주세요(0~100)");
+			var int1 = parseInt(add); //prompt로 들어오는 숫자는 '문자취급'하므로 정수 변경
+			
+			var v = 1; // 시작값 들어갈 변수 설정
+			var oddSum = 0; // 홀수의 합계 들어갈 변수 설정
+			var evenSum = 0; // 짝수의 합계 들어갈 변수 설정
+			
+			while (v <= int1) { //들어가는 수가 int1에서 정수로 변환된것보다 작거나 같음
+				if (v % 2 ==1) { //만약 홀수일 경우 oddSum에 v값이 더해짐
+					oddSum += v;
+				} else {			//그밖에 짝수일 경우 evenSum에 v값이 더해짐
+					evenSum += v;
+				}
+				v++; // 반복작업
+			}
+			
+			document.write("홀수의 합 : " + oddSum + "<br>");
+			document.write("짝수의 합 : " + evenSum + "<br>");
+			document.write("합계 : " + (oddSum + evenSum));
+			
+		</script>
+	</body>
+</html>

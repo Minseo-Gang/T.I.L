@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ex6-18.html</title>
+	</head>
+	<body>
+	<!-- for문(~하는 동안 -> 조건을 만족하는 동안)	for(조건) { } - 만족하는 동안 계속
+		while문(~하는 동안 -> 조건을 만족하는 동안) while(조건) { } - 만족하는 동안 계속 -->
+		
+		<script>
+		// 1부터 100까지의 합 구하기 : 5050
+		// 변수의 위치를 잘 잡아야됨 (안그럼 무한의 인피니티에 빠짐..)
+		// 반복을 그만할 수 있는 조건 형성 체크하기
+		
+		/*
+		var v = 1; 
+		var sum = 0; 
+		while (v <= 100) { // 조건 비교
+			// 합계 누적
+			sum = sum + v;
+			v++; // v = v + 1
+		}
+		//합계
+		document.write("합계:" + sum);
+		*/
+		
+		//프롬프트를 이용해 사용자에게 숫자를 입력받아 1부터 사용자가 입력한 수(n)까지의 합계 구하기
+		
+		var v = prompt("합계를 구할 숫자를 입력하세요");
+		var n = parseInt(v);
+		var startNum = 1;
+		var sum = 0;
+		while (startNum <= n) {
+			sum += startNum; // sum = sum + startNum;
+			startNum++;
+		}
+		
+		document.write(n + "까지의 합:" + sum);
+		
+		</script>
+	</body>
+</html>

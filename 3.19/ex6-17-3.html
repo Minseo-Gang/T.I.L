@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ex6-17-3.html</title>
+	</head>
+	<body>
+	
+		<script>
+			document.write("<h1>구구단</h1>" + "<hr>");
+			document.write("<table border='1'>");
+			
+				document.write("<thead>");
+				document.write("<tr>");
+				document.write("<th>" + "2단" + "</th>");
+				document.write("<th>" + "3단" + "</th>");
+				document.write("<th>" + "4단" + "</th>");
+				document.write("<th>" + "5단" + "</th>");
+				document.write("</tr>");
+				
+				for (var v = 1; v <= 9; v++) { 
+					document.write("<tr>");
+					document.write("<td>2x" + v + " = " + (v * 2) + "</td>");
+					document.write("<td>3x" + v + " = " + (v * 3) + "</td>");
+					document.write("<td>4x" + v + " = " + (v * 4) + "</td>");
+					document.write("<td>5x" + v + " = " + (v * 5) + "</td>");
+					document.write("</tr>");
+				}
+				
+				document.write("<thead>");
+				document.write("<tr>");
+				document.write("<th>" + "6단" + "</th>");
+				document.write("<th>" + "7단" + "</th>");
+				document.write("<th>" + "8단" + "</th>");
+				document.write("<th>" + "9단" + "</th>");
+				document.write("</tr>");
+				document.write("</thead>");
+				
+				for (var v = 1; v <=9; v++) { 
+					document.write("<tr>");
+					document.write("<td>6x" + v + " = " + (v * 6) + "</td>");
+					document.write("<td>7x" + v + " = " + (v * 7) + "</td>");
+					document.write("<td>8x" + v + " = " + (v * 8) + "</td>");
+					document.write("<td>9x" + v + " = " + (v * 9) + "</td>");
+					document.write("</tr>");
+				}
+
+				
+			document.write("</table>")
+		</script>
+	</body>
+</html>

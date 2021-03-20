@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>반복 중단 연습</title>
+	</head>
+	<body>
+		<script>
+			//400cm를 하루에 5cm씩 올라가서 2cm씩 내려감
+			var cm = 0;
+			var day = 1;
+			
+			while (true) {
+				cm += 5;
+				if (cm >= 400) {
+					break;
+				} else {
+					cm -= 2;
+				}
+				day++;
+			}
+			document.write("탈출 높이:"+ cm);
+			document.write("탈출 일자:"+ day);
+				
+			/*
+			var day = 1; //탈출 시작한 일자
+			var position = 0; //탈출하고 있는 위치
+			
+			while (true) {
+				position += 5; // 5cm 올라감
+				if(position >= 400) { // 400cm 넘으면 탈출하므로 작업 중단
+					break;
+				} else {
+					position -= 2; // 그렇지 않으면 2cm 미끄러져 내려감
+				}
+				day++; // 반복
+			}
+			document.write("탈출 높이:"+ position);
+			document.write("탈출 일자:"+ day);
+			*/
+			
+		</script>
+	</body>
+</html>

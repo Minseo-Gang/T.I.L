@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ex6-18-1.html</title>
+	</head>
+	<body>
+		<script>
+		var declare = prompt("숫자를 입력하세요(0~100)");
+		var n = parseInt(declare);
+		var v = 1;
+		var oddAdd = 0;
+		var evenAdd = 0;
+		
+			while (v <= n) {
+				if (v % 2 == 1) {
+					oddAdd += v;
+					v++;
+				} else {
+					evenAdd += v;
+					v++;
+				} 
+			}
+			var total = oddAdd + evenAdd;
+			
+			document.write("홀수의 합:" + oddAdd + "<br>");
+			document.write("짝수의 합:" + evenAdd + "<br>");
+			document.write("합계:" + total);
+			
+			
+			
+			
+			
+			/*
+			1~100까지의 홀수, 짝수, 총합 구하기
+			
+			var n = prompt("합계를 구한 숫자 입력");
+			var num = parseInt(n);
+			var v = 1;
+			var oddSum = 0;
+			var evenSum = 0;
+			
+			while (v <= num) { 
+				if (v % 2 != 0) { //짝수가 아닌 경우, 즉 홀수의 표현
+					oddSum += v;
+					v++;
+				} else {
+					evenSum += v;
+					v++;
+				}
+				
+			}
+			document.write("홀수의 합:" + oddSum + "<br>");
+			document.write("짝수의 합:" + evenSum + "<br>");
+			document.write("합계:" + (oddSum + evenSum));
+			*/
+		
+		</script>
+	</body>
+</html>
