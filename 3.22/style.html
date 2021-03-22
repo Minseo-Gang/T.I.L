@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ex4-9-1.html</title>
+		<style>
+			input[type=text] {
+				border: 2px dashed blue;
+			}
+			#userPw {
+				border: 2px dotted green;
+			}
+			
+			
+			/* padding : 안쪽여백(보더와 내용물 사이의 공간)
+				margin : 바깥쪽 여백(보더와 다른 엘리먼트 사이의 공간)
+				border : 영역 테두리 */
+		
+	 /* padding : 10px(top에서 시작) 20px 30px 40px (시계방향으로 한번에 쓸 수 있음) 
+		border는 전체 방향 한번에 지정 안됨*/
+		
+			h3 {	
+				text-align: center;
+				/* padding-top: 50px;
+				padding-bottom: 100px;
+				padding-left: 30px;
+				padding-right: 40px; */
+				padding : 100px 200px 300px 400px;
+				
+				margin: 10px 20px 30px 40px;
+				
+				border-top: 5px solid red; /* 두께 종류 색상 순으로 */
+				border-right: 10px dashed blue;
+				border-bottom: 15px dotted green;
+				border-left: 20px solid dodgerblue;
+			}
+			hr {
+				border: 1px solid red;
+			}
+			button[type=button] {
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>로그인</h3>
+		<hr>
+		<div>
+			아이디:<input type="text" id="userId"><br>
+			비밀번호:<input type="password" id="userPw"><br>
+			<button type="button" onclick="login();">로그인</button>
+		</div>
+		<div id="message1"></div>
+		<div id="message2"></div>
+		
+		
+		
+		<script>
+		function login() {
+			var id = document.getElementById("userId").value;
+			var pw = document.getElementById("userPw").value;
+			
+				// div에 .value 사용하지 않음(주의!)
+			if (id == "") {
+				document.getElementById("message1").innerHTML
+				= "<strong>아이디</strong>를 입력해주세요";
+				document.getElementById("userId").style.background= "yellow";
+			}
+
+			if (pw == "") {
+				document.getElementById("message1").innerHTML 
+				= "<strong>비밀번호</strong>를 입력해주세요";
+				document.getElementById("userPw").style.background= "yellow";
+			}
+		}
+		
+		
+		
+		</script>
+	</body>
+</html>

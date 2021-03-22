@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>폼태그</title>
+	</head>
+	<body>
+		<form>
+		아이디 : <input type="text" required><br> <!-- required 필수 입력 사항 -->
+		이름 : <input type="text" value="강민서" readonly><br> 
+			<!-- readonly 수정 못하고 value값만 계속 유지됨 -->
+		성별 : <input type="radio" name="gender">남 
+		      <input type="radio" name="gender" checked>여 <br>
+		취미 : <input type="checkbox" name="hobby" checked>음악감상 
+		      <input type="checkbox" name="hobby">독서
+		      <input type="checkbox" name="hobby" checked>게임 <br>
+		관심언어 : <select>
+					<option>자바</option>
+					<option selected>파이썬</option>
+					<option>C#</option>
+				</select><br>
+		<input type="submit" value="완료">
+		<input type="reset" value="다시쓰기">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ex6-22.html</title>
+	</head>
+	<body>
+	<input type="button" value="빵사오기" onclick="buyBread(1000);">
+	<input type="button" value="커피사오기" onclick="buyCoffee();">
+		<script>
+			/*
+			// 파라미터(매개변수) (o), 리턴값(o)
+			function buyBread(money) {
+				// money는 함수내에 사용되는 지역변수
+				console.log(money);
+			}
+			
+			// 파라미터(x), 리턴값(o)
+			function buyCoffee() {
+				return "아메리카노";
+			}
+			
+			var c = prompt("커피사오기");
+			*/
+			// 기능(함수) 정의
+			function adder(a, b) {
+				var result = a + b;
+				return result;
+			}
+			
+			var v = adder(100, 200); // 함수를 실행
+			
+			console.log("끝" + v);
+			
+			// 리턴값을 돌려주는 함수를 실행했을 때는 반드시 변수에 저장하기 (저장하지 않으면 버려짐..)
+			
+		</script>
+	</body>
+</html>

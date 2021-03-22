@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ex6-22-2.html</title>
+	</head>
+	<body>
+	<input type="text" value="100" id="text1"><br>
+	<input type="text" value="200" id="text2"><br>
+	<button type="button" onclick="calculate('+');">+</button>
+	<button type="button" onclick="calculate('-');">-</button>
+	<button type="button" onclick="calculate('*');">*</button>
+	<button type="button" onclick="calculate('/');">/</button>
+	<button type="button" onclick="calculate('%');">%</button>
+	<hr>
+	<input type="text" id="text3">
+		
+		<script>
+		function calculate(oper) {
+			//console.log(oper);
+			var num1 = parseInt(document.getElementById("text1").value);
+			var num2 = parseInt(document.getElementById("text2").value);
+			var result;
+			switch (oper) {
+				case "+" :
+					result = num1 + num2;
+					break;
+				case "-" :
+					result = num1 - num2;
+					break;
+				case "*" :
+					result = num1 * num2;
+					break;
+				case "/" :
+					result = num1 / num2;
+					break;
+				case "%":
+					result = num1 % num2;
+					break;
+			}
+			document.getElementById("text3").value = result;
+		}
+				
+		</script>
+	</body>
+</html>

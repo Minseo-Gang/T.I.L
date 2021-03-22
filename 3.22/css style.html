@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS 맛보기</title>
+		<link rel="stylesheet" href="div.css">
+		<style>
+			/* 내부스타일 - html 문서 내에 style 태그 이용해서 기술 */
+			body { 
+				background-color: yellow;
+			}
+			hr {
+				border: 3px solid blue; /* 두께, 종류, 색상 순으로 정의 */
+			}
+			span {
+				color: blue; 
+				font-size:40px;
+			}
+			
+		</style>
+	</head>
+	<body>
+	<!-- 스타일 1. 인라인 - 태그에 기술
+			  2. 내부 - 같은 html 문서에 기술
+			  3. 외부 - 따로 스타일 문서 작성 -->
+	
+	<!-- inline 스타일 -->
+	<h3 style="color:yellow; background-color:green">CSS 스타일 맛보기</h3>
+	<hr>
+	<p> 나는 <span>웹 프로그래밍</span>을 좋아한다 </p>
+	<div> 너는 어때? </div>
+	
+	<!-- selector
+		엘리먼트 선택
+		태그명으로 찾기
+			h3 {}
+			
+		아이디명으로 찾기
+			id="myId" - 문서 내에 하나만 존재
+			#myId { }
+			
+		클래스명으로 찾기
+			class="myClass" - 그루핑, 문서내에 여러개가 존재할 수 있음
+			.myClass { }
+			
+		속성을 이용해서 찾기	
+			[속성명=속성값]
+			input[type=text] { } -->
+	
+	</body>
+</html>

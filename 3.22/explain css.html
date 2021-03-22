@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ex4-9.html</title>
+		<style>
+			/* 태그명으로 찾기 - 태그명은 콤마(,)로 구분 */
+			h3, li {
+				color:brown;
+			}
+			
+			/* 자식(한단계 아래) 엘리먼트 찾기 - >(gt사용) */
+			div > div > strong {
+				background-color:yellow;
+			}
+			
+			/* 자손(자식 + 여러 단계 아래) 엘리먼트 찾기 - 공백 */
+			ul strong { 
+				color : dodgerblue;
+			}
+			
+			/* 클래스명으로 찾기 */
+			.redText {
+				color : red;
+			}
+			
+			div.redText {           /* div중에 class가 redText인 div에 해당 */
+				text-decoration: underline;
+			}
+			
+			/* 아이디명으로 찾기 */
+			#divA {
+				font-size:30px;
+			}
+			
+			/* 속성으로 찾기 [속성명=속성값] */
+			input[type=text] {
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h3>Web Programming</h3>
+		<hr>
+		<div>
+			<div> 2학기 <strong>학습 내용</strong>입니다.</div>
+			<ul>
+				<li class="redText"><span>HTML5</span></li>
+				<li><strong>CSS</strong></li>
+				<li>JAVA SCRIPT</li>
+			</ul>
+			<div class="redText" id="divA">90점 이상은 A</div>
+			<div class="redText">60점 이하는 F</div>
+			<div>
+				<input type="text"><br>
+				<input type="text"><br>
+				<input type="number"><br>
+				<input type="button"><br>
+			</div>
+		</div>
+	</body>
+</html>

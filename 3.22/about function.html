@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ex6-22-1.html</title>
+	</head>
+	<body>
+		<button type="button" onclick="func1();">Click</button>
+		<script>
+			// 함수에서 다른 함수를 호출할 수 있다.
+			function func1() {
+				console.log("func1() 실행됨");
+				func2();
+				var v = func3(100);
+				console.log("돌려받은 값:" + v);
+				console.log("func1() 종료됨");
+			}
+			
+			function func2() {
+				console.log("func2() 실행됨");
+				
+				console.log("func2() 종료됨");
+				// return; 이 생략되어 있음 (아무것도 없는 return은 생략이 가능하다)
+			}
+			
+			function func3(num) {
+				console.log("func3() 실행됨");
+				console.log("func3() 종료됨");
+				return num * 2;
+			}
+		</script>
+	</body>
+</html>
