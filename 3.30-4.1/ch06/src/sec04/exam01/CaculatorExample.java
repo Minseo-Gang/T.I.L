@@ -6,7 +6,8 @@ public class CaculatorExample {
 		
 		Calculator myCalculator = new Calculator();
 		
-		myCalculator.powerOn();
+		myCalculator.powerOn(); // 전원켜기
+		
 		int result1 = myCalculator.plus(5, 7);
 			System.out.println("result1: " + result1);
 		
@@ -14,6 +15,8 @@ public class CaculatorExample {
 		byte y = 4;
 		double result2 = myCalculator.divide(x, y);
 			System.out.println("result2: " + result2);
+			
+		myCalculator.powerOff(); // 전원끄기
 	}
 
 }

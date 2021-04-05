@@ -10,13 +10,10 @@ public class MemberService {
 			return true;
 		} else {
 			return false;
-		}
-	} 
-	
+		}	
+	}
 	void logout(String id) {
-		if(id.equals("hong")) {
-			System.out.println("로그아웃 되었습니다");
-		}
+		System.out.println("로그아웃 되었습니다");
 	}
 	
 }

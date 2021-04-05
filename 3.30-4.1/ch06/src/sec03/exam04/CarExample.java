@@ -15,8 +15,6 @@ public class CarExample {
 		System.out.println("car2.color:" + car2.color);
 		System.out.println("car2.maxSpeed:" + car2.maxSpeed);
 		
-		
-		
 	}
 
 }

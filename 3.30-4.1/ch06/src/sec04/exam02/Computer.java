@@ -4,6 +4,7 @@ public class Computer {
 
 	// 배열을 인자로 받아서
 	int sum1(int[] values) { // 갯수가 1개 - 원소가 여러개
+		
 		System.out.println(values);
 		
 		int sum = 0;
@@ -12,8 +13,6 @@ public class Computer {
 		}
 		return sum;
 	}
-	
-	
 	
 	
 	// 복수형을 받아서

@@ -3,22 +3,23 @@ package prac06.ex4;
 public class Printer {
 	
 	Printer() {
+		
 	}
 	
-	void println(int number) {
-		System.out.println(number);
-	} 
-	
-	void println(boolean trueOrFalse) {
-		System.out.println(trueOrFalse);
+	void println(int i) {
+		System.out.println(i);
 	}
 	
-	void println(double number2) {
-		System.out.println(number2);
+	void println(boolean b) {
+		System.out.println(b);
 	}
 	
-	void println(String name) {
-		System.out.println(name);
+	void println(double d) {
+		System.out.println(d);
+	}
+	
+	void println(String s) {
+		System.out.println(s);
 	}
 	
 }
